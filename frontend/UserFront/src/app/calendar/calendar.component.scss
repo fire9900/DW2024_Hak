@@ -1,0 +1,48 @@
+.app-calendar{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows:30px repeat(5, 1fr);
+    background-color:  black;
+    gap: 2px;
+    border: 2px solid black;
+
+    .day{
+        background-color: #046CC1;
+        text-align:center;
+        color: white;
+        font-size: 20px;
+    }
+    .sun{
+        background-color: #F64B4B;
+    }
+    .number{
+        background-color: white;
+        font-size: 25px;
+        display: flex;
+    
+    }
+    .container_news{
+        margin: 10px 10px;
+    }
+    
+    .pynkt{
+        background-color: darkred;
+        width: 8px;
+        height: 8px;
+        border-radius: 90%;
+        margin: 8px 5px;
+    }
+    
+    .block_news{
+        display: flex;
+        background-color: #fff;
+        border: 2px solid red;
+        margin-top: 10px;
+        padding: 10px 10px;
+    }
+    
+    .news{
+        font-size: 12px
+    }
+}

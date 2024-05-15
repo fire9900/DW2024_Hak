@@ -1,0 +1,98 @@
+<div class="app-admin">
+
+  <div class="conteiner">
+    <div class="poisk">
+      <input  class="poisk1" placeholder= "Поиск"><br><br>
+      <select  class="poisk_ univers">
+        <option value="univers 1">Институт</option>
+        <option value="univers 2">ИнПИТ</option>
+        <option value="univers 3">ИММТ</option>
+        <option value="univers 4">ИнЭТиП</option>
+      </select><br><br>
+      <select  class="poisk_ naprav">
+        <option value="naprav 1">Направление</option>
+        <option value="naprav 2">ИФСТ</option>
+        <option value="naprav 3">ПИНЖ</option>
+        <option value="naprav 4">ИВЧТ</option>
+      </select><br><br>
+      <select  class="poisk_ grup">
+        <option value="grup 1">Группа</option>
+        <option value="grup 2">Б1-ИФСТ-14</option>
+        <option value="grup 3">Б2-ИФСТ-22</option>
+        <option value="grup 4">Б1-ИФСТ-41</option>
+      </select><br><br>
+      <select  class="poisk_ meropr">
+        <option value="meroprp 1">Мероприятие</option>
+        <option value="meropr 2">мероприятие 1</option>
+        <option value="meropr 3">мероприятие 2</option>
+        <option value="meropr 4">мероприятие 3</option>
+      </select><br><br>
+    </div>
+    <div class="event">
+      <p class="dobav">Добавить мероприятие</p>
+      <form action="/upload" method="post" enctype="multipart/form-data" >
+        <input  class=" merop" placeholder= "Название мероприятия" [(ngModel)]="event.nameEvent"><br><br>
+        <input  class="merop" placeholder= "Описание мероприятия" [(ngModel)]="event.description"><br><br>
+        <label for="date" class="date" >Дата:</label>
+        <input type="date" class="date" [(ngModel)]="event.date_time"><br><br>
+
+        <input type="file" class="file"> <br><br>
+        <button (click)="submit()"  type="button" class="submit">Добавить</button>
+      </form>
+
+    </div>
+    <div class="zayavki">
+      <div class="box">
+        <div class="zaglav">Заявки</div>
+        <div class="block_zayav">
+          <div class="ava"></div>
+          <div class="infa_stud">
+            <div class="fi">Фамилия Имя</div>
+            <div class="group">Группа</div>
+            <div class="event">Название мероприятия</div>
+          </div>
+          <div class="square">
+            <img class="izob" src="../../assets/images/dashboard/green-arrow.png">
+          </div>
+          <div class="square">
+            <img class="izob1" src="../../assets/images/red-cross.png">
+          </div>
+        </div>
+        <div class="block_zayav">
+          <div class="ava"></div>
+          <div class="infa_stud">
+            <div class="fi">Фамилия Имя</div>
+            <div class="group">Группа</div>
+            <div class="event">Название мероприятия</div>
+          </div>
+          <div class="square">
+            <img class="izob" src="../../assets/images/dashboard/green-arrow.png">
+          </div>
+          <div class="square">
+            <img class="izob1" src="../../assets/images/red-cross.png">
+          </div>
+        </div>
+        <div class="block_zayav">
+          <div class="ava"></div>
+          <div class="infa_stud">
+            <div class="fi">Фамилия Имя</div>
+            <div class="group">Группа</div>
+            <div class="event">Название мероприятия</div>
+          </div>
+          <div class="square">
+            <img class="izob" src="../../assets/images/dashboard/green-arrow.png">
+          </div>
+          <div class="square">
+            <img class="izob1" src="../../assets/images/red-cross.png">
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <button class="btn">Применить</button>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

@@ -1,0 +1,32 @@
+.event-card {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    margin: 25px 5%;
+
+  &__description {
+    font-size: 20px;
+    font-weight: 100;
+    width: 85%;
+    padding: 15px 30px;
+
+    &_name {
+      font-size: 35px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    &_text {
+      font-weight: 300;
+    }
+  }
+
+  &__img {
+    max-width: 30%;
+    max-height: 150px;
+  }
+
+}
+

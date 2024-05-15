@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include relativeToChangelogFile="true" file="05_2024_changelog/db.create_category.xml"/>
+    <include relativeToChangelogFile="true" file="05_2024_changelog/db.create_event.xml"/>
+    <include relativeToChangelogFile="true" file="05_2024_changelog/db.create_institute.xml"/>
+    <include relativeToChangelogFile="true" file="05_2024_changelog/db.create_group.xml"/>
+    <include relativeToChangelogFile="true" file="05_2024_changelog/db.create_person.xml"/>
+    <include relativeToChangelogFile="true" file="05_2024_changelog/db.create_achievements.xml"/>
+    <include relativeToChangelogFile="true" file="05_2024_changelog/db.create_table_score.xml"/>
+
+</databaseChangeLog>

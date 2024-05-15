@@ -1,0 +1,136 @@
+.app-admin {
+
+  .conteiner{
+    display: grid;
+    grid-template-columns:1fr 3fr 2fr;
+  }
+  .poisk{
+    background-color: #77AFDD;
+    height: 100vh;
+  }
+  .poisk1{
+    margin: 5px;
+    margin-top: 20px;
+    width: 90%;
+    height: 55px;
+    font-size: 30px;
+  }
+  .poisk_{
+    margin: 5px;
+    width: 90%;
+    height: 55px;
+    font-size: 30px;
+  }
+  .naprav{
+    font-size: 25px;
+  }
+  .event{
+    background-color: #DAE7F2;
+  }
+  .dobav{
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .merop{
+    width: 82%;
+    height: 55px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+  .date{
+    font-size: 28px;
+    margin-left:45px;
+  }
+  .file{
+    font-size: 28px;
+    margin-left:45px;
+    padding: 10px;
+  }
+  .zayavki{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #77AFDD;
+    height: 100vh;
+  }
+
+  .block_zayav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 30px;
+    background-color: #fff;
+  }
+
+  .zaglav{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  .ava{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+  }
+
+  .square{
+    width: 50px;
+    height: 50px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .group{
+    font-size: 14px;
+  }
+
+  .fi{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .izob{
+    padding: 8px 8px;
+  }
+
+  .izob1{
+    width: 25px;
+  }
+
+  .foot{
+    display: flex;
+    justify-content: center;
+    background-color: #bdb5b5;
+    width: 100%;
+    height: 50px;
+  }
+
+  .btn{
+    padding: 7px 15px;
+    border-radius: 20px;
+    margin: 5px 0px;
+  }
+
+  .submit {
+    width: 190px;
+    height: 60px;
+    font-size: 32px;
+    cursor: pointer;
+    border: 3px solid var(--blue);
+    display: block;
+    margin: 0 auto;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--blue);
+    }
+  }
+
+}

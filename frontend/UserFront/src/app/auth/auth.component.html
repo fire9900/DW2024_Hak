@@ -1,0 +1,26 @@
+<div class="auth">
+    <header>
+        <div class="head">
+            <img src="../../assets/images/logo.png" alt="Логотип СГТУ" class="head__logo">
+            <div class="head__title">САРАТОВСКИЙ ГОСУДАРСТВЕННЫЙ <br>
+                ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ <br>
+                имени Гагарина Ю. А.</div>
+        </div>
+        <div class="name">
+            <p class="name__title">Личный кабинет студента</p>
+        </div>
+    </header>
+    <div class="form">
+        <form action="/login" method="post">
+            <p>Логин</p>
+            <input type="text" name="username" class="input-field">
+            <P>Пароль</P>
+            <input type="password" name="username " class="input-field">
+            <div class="submit-btn">
+                <input hidden type="submit" name="submit" value="Войти" class="submit">
+                <button routerLink="/dashboard" type="button" class="submit">Войти</button>
+            </div>  
+        </form>
+    </div>
+    <div class="footer"></div>
+</div>

@@ -1,0 +1,189 @@
+<div class="app-dashboard">
+    <header>
+        <a routerLink="/" class="header_menu">Главная</a>
+        <a routerLink="/calendar" class="header_menu">Календарь</a>
+        <a routerLink="/" class="header_menu">Частые вопросы</a>
+        <a routerLink="/prizes" class="header_menu">Призы</a>
+    </header>
+    <main>
+        <div class="main_menu">
+            <div class="menu">Активист сегодня - </div>
+            <div class="menu_2">Успешный человек завтра!</div>
+        </div>
+        <div class="container_three">
+            <div class="container_dostig">
+                <div class="name_dostig">Достижения</div>
+                <div class="block_dostig">
+                    <div class="perechen_dostig">Участие в соревнованиях</div>
+                    <img src="../../assets/images/dashboard/green-arrow.png" alt="">
+                </div>
+                <div class="block_dostig">
+                    <div class="perechen_dostig">Участие в волонтерстве на фестивале</div>
+                    <img src="../../assets/images/dashboard/green-arrow.png" alt="">
+                </div>
+                <div class="block_dostig">
+                    <div class="perechen_dostig">Участие в конференции</div>
+                    <img src="../../assets/images/dashboard/gray-arrow.png">
+                </div>
+                <button routerLink="/add-achivment" class="block_btn">
+                    <div>Добавить</div>
+                    <img class="plus" src="../../assets/images/dashboard/plus.png">
+                </button>
+            </div>
+
+            <div class="container_achivs">
+                <div class="name_dostig">Звания</div>
+                <div class="block_achivs">
+                    <div class="name_achivs">
+                        <div class="zvanie">Новичок</div>
+                        <div>70%</div>
+                    </div>
+                    <div class="poln_shkala">
+                        <div class="zapoln_shkala0"></div>
+                    </div>
+                </div>
+                <div class="block_achivs">
+                    <div class="name_achivs">
+                        <div class="zvanie">Мастер волонтерства</div>
+                        <div>55%</div>
+                    </div>
+                    <div class="poln_shkala">
+                        <div class="zapoln_shkala1"></div>
+                    </div>
+                </div>
+                <div class="block_achivs">
+                    <div class="name_achivs">
+                        <div class="zvanie">Хакер</div>
+                        <div>30%</div>
+                    </div>
+                    <div class="poln_shkala">
+                        <div class="zapoln_shkala2"></div>
+                    </div>
+                </div>
+                <div class="nabor_achivok">
+                    <img class="achvki" src="../../assets/images/dashboard/ach1.jpeg">
+                    <img class="achvki" src="../../assets/images/dashboard/ach2.jpeg">
+                    <img class="achvki" src="../../assets/images/dashboard/ach3.jpeg">
+                    <img class="achvki" src="../../assets/images/dashboard/ach4.jpeg">
+                </div>
+                <button class="block_btn1">
+                    <div>Далее...</div>
+                </button>
+            </div>
+            <div class="container_reiting">
+                <div class="name_dostig">ТОП-3</div>
+                <div class="block_reiting">
+                    <div class="reiting">1. Фамилия Имя</div>
+                    <div class="ochko">100</div>
+                </div>
+                <div class="block_reiting">
+                    <div class="reiting">2. Фамилия Имя</div>
+                    <div class="ochko">90</div>
+                </div>
+                <div class="block_reiting">
+                    <div class="reiting">3. Фамилия Имя</div>
+                    <div class="ochko">80</div>
+                </div>
+                <div class="block_reiting">
+                    <div class="reiting">.....</div>
+                </div>
+                <div class="block_reiting">
+                    <div class="reiting">10. Вы</div>
+                    <div class="ochko">10</div>
+                </div>
+                <button class="block_btn2">
+                    <div>Рейтинг</div>
+                </button>
+            </div>
+        </div>
+
+      <div class="events-container">
+        @for (event of events; track events) {
+          <app-events-card [data]="event"></app-events-card>
+        }
+
+      </div>
+    </main>
+    <article>
+        <div class="lk">
+            <div class="lk_name">Личный кабинет</div>
+            <img class="pencil" src="../../assets/images/dashboard/lk-edit.png">
+        </div>
+        <div class="profile">
+            <div class="foto"></div>
+            <div class="infa">
+                <div class="name_student">Василий Пупкин</div>
+                <div class="geo">
+                    <img class="geo_znak" src="../../assets/images/dashboard/location.png">
+                    <div class="location">Саратов, Россия</div>
+                </div>
+            </div>
+        </div>
+        <div class="container_dopsved">
+            <div class="instityt">
+                <div class="bold">Институт</div>
+                <div class="light">ИнПит</div>
+            </div>
+            <div class="pazdel"></div>
+            <div class="group">
+                <div class="bold">Группа</div>
+                <div class="light">Б1-ИФСТ-11</div>
+            </div>
+            <div class="pazdel"></div>
+            <div class="instityt">
+                <div class="bold">Баллы</div>
+                <div class="light">999</div>
+            </div>
+        </div>
+        <div class="container_kalendar">
+            <a routerLink="/calendar" class="kalendar">Календарь событий</a>
+            <div class="block_month">
+                <div class="month">Январь</div>
+            </div>
+        </div>
+        <div class="container_data">
+            <div class="block_data block_data_red">
+                <div class="data">Пн</div>
+                <div class="data">01</div>
+            </div>
+            <div class="block_data">
+                <div class="data">Вт</div>
+                <div class="data">02</div>
+            </div>
+            <div class="block_data">
+                <div class="data">Ср</div>
+                <div class="data">03</div>
+            </div>
+            <div class="block_data">
+                <div class="data">Чт</div>
+                <div class="data">04</div>
+            </div>
+            <div class="block_data">
+                <div class="data">Пт</div>
+                <div class="data">05</div>
+            </div>
+            <div class="block_data">
+                <div class="data">Сб</div>
+                <div class="data">06</div>
+            </div>
+            <div class="block_data">
+                <div class="data">Вс</div>
+                <div class="data">07</div>
+            </div>
+        </div>
+        <div class="container_news">
+            <div class="block_news">
+                <div class="pynkt"></div>
+                <div class="news">Студвесна 2024</div>
+            </div>
+            <div class="block_news">
+                <div class="pynkt"></div>
+                <div class="news">Хакатон по веб-разработке</div>
+            </div>
+            <div class="block_news">
+                <div class="pynkt"></div>
+                <div class="news">Мастер-класс от Тинькоффа</div>
+            </div>
+        </div>
+    </article>
+</div>

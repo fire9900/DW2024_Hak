@@ -1,0 +1,84 @@
+.auth {
+    --margin-left: 17.7vw;
+
+    .head {
+        margin-left: var(--margin-left);
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        &__logo {
+            width: 176px;
+            margin-right: 17px;
+        }
+
+        &__title {
+            display: inline-block;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 500;
+        }
+    }
+
+    .name {
+        width: fit-content;
+        height: 100px;
+        background-color: var(--blue);
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+
+        &__title {
+            display: inline-block;
+            font-size: 55px;
+            margin-left: var(--margin-left);
+            margin-right: 120px;
+            color: #fff;
+            text-wrap: nowrap;
+        }
+    }
+
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 610px;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+
+        padding: 25px 105px;
+        border: 3px solid #E7E9EF;
+
+        p {
+            font-size: 24px;
+            margin-bottom: 9px;
+        }
+
+        .input-field {
+            width: 400px;
+            height: 55px;
+            border: 3px solid #E7E9EF;
+            margin-bottom: 25px;
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;    
+        }
+
+        .submit-btn {
+            text-align: center;
+
+            .submit {
+                width: 190px;
+                height: 60px;
+                font-size: 32px;
+                cursor: pointer;
+                border: 3px solid var(--blue);
+
+                &:hover {
+                    color: #fff;
+                    background-color: var(--blue);
+                }
+            }
+        }
+        
+    }
+}

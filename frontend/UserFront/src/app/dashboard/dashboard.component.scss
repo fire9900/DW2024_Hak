@@ -1,0 +1,370 @@
+.app-dashboard {
+
+    header{
+        display: flex;
+        background-color: var(--blue);
+        padding: 7px 200px;
+        color: #fff;
+    }
+
+    .header_menu{
+        padding: 0px 10px;
+        font-size: 18px;
+
+        &:link , &:visited, &:active {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .main_menu{
+         background-image: url("../../assets/images/dashboard/flag-bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 15px 10%;
+        font-size: 50px;
+    }
+
+    .menu_2{
+        padding-left: 200px;
+    }
+
+    main{
+        width: 80%;
+        float: left;
+    }
+
+    article{
+        background-color: #F0F0F0;
+        width: 20%;
+        float: right;
+    }
+
+    .lk{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--blue);
+        padding: 10px 30px;
+        border: 2px solid black;
+    }
+
+    .lk_name{
+        color: #fff;
+        font-size: 22px;
+    }
+
+    .pencil{
+        background-color: lightgray;
+        padding: 4px;
+        border-radius: 8px;
+    }
+    .foto{
+        background-color: #D9D9D9;
+        border-radius: 50%;
+        align-self: flex-start;
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .geo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .location{
+        font-size: 22px;
+    }
+
+    .name_student{
+        font-size: 22px;
+        padding-top: 30px;
+        font-weight: 550;
+    }
+
+    .geo_znak{
+        width: 30px;
+        height: 30px;
+    }
+
+    .geo{
+        padding-top: 20px ;
+    }
+
+    .container_dopsved{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pazdel{
+        height: 50px;
+        width: 3px;
+        background-color: black;
+    }
+
+    .bold{
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .light{
+        padding-top: 3px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container_kalendar{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--blue);
+        border: 2px solid black;
+        padding: 15px 30px;
+    }
+
+    .block_month{
+        width: 90px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 10px;
+
+      .month {
+
+        &:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 10px solid #2b2b2b;
+          display: inline-block;
+        }
+      }
+
+
+    }
+
+    .tringle{
+        width: 10px;
+        height: 10px;
+    }
+
+    .kalendar{
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .container_data{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .block_data{
+        background-color: #fff;
+        width: 50px;
+        padding: 20px 0px;
+    }
+
+    .block_data_red{
+        width: 50px;
+        background-color: rgb(241, 145, 145);
+        padding: 20px 0px;
+    }
+
+    .data{
+        padding-bottom: 8px;
+        text-align: center;
+    }
+
+    .container_news{
+        margin: 10px 10px;
+
+        > div {
+            border-radius: 20px;
+        }
+    }
+
+    .pynkt{
+        background-color: var(--dark-red);
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        margin-right: 5px;
+    }
+
+    .block_news{
+        display: flex;
+        background-color: #fff;
+        border: 2px solid var(--red);
+        margin-top: 10px;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .news{
+        font-size: 22px
+    }
+
+    .container_three{
+        display: flex;
+        justify-content: space-between;
+
+        margin: 20px 85px 40px 85px;
+
+        > div {
+            padding: 15px;
+
+            img {
+                height: fit-content;
+            }
+
+        }
+    }
+
+    .container_dostig{
+        width: 30%;
+        height: 350px;
+        background-color: #ECEFF4;
+    }
+
+    .block_dostig{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #D9D9D9;
+        border: 2px solid var(--red);
+        margin-top: 10px;
+        padding: 7px 15px;
+    }
+
+    .name_dostig{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .perechen_dostig{
+        font-size: 20px;
+    }
+
+    .block_btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #D9D9D9;
+        width: 100px;
+        margin: 30px auto;
+        border: 2px grey dotted;
+        padding: 5px;
+      cursor: pointer;
+    }
+
+    .plus{
+        width: 15px;
+    }
+
+    .container_achivs{
+        width: 30%;
+        height: 350px;
+        background-color: #ECEFF4;
+    }
+
+    .name_achivs{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .poln_shkala{
+        background-color: #D9D9D9;
+        padding: 5px 10px;
+    }
+
+    .zapoln_shkala0{
+        background-color: var(--red);
+        padding: 5px 10px;
+        width: 70%;
+        border-radius: 50px;
+    }
+
+    .zapoln_shkala1{
+        background-color: violet;
+        padding: 5px 10px;
+        width: 55%;
+        border-radius: 50px;
+    }
+
+    .zapoln_shkala2{
+        background-color: orange;
+        padding: 5px 10px;
+        width: 30%;
+        border-radius: 50px;
+    }
+
+    .block_achivs{
+        margin-top: 5px;
+        padding: 0px 20px;
+    }
+
+    .block_btn1{
+        display: flex;
+        justify-content: space-between;
+        background-color: #D9D9D9;
+        width: 100px;
+        margin: 40px auto;
+        border: 2px grey dotted;
+        padding: 6px 20px;
+    }
+
+    .nabor_achivok{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+
+    .container_reiting{
+        width: 30%;
+        height: 350px;
+        background-color: #ECEFF4;
+    }
+
+    .block_reiting{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        padding: 0px 20px;
+    }
+
+    .reiting,
+    .ochko{
+        font-size: 22px;
+    }
+
+    .block_btn2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #D9D9D9;
+        width: 100px;
+        margin: 90px auto;
+        border: 2px grey dotted;
+        padding: 6px 15px;
+
+        &:after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 10px solid #2b2b2b;
+        }
+    }
+
+}
